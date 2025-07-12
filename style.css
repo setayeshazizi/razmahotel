@@ -1,0 +1,221 @@
+body{
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+}
+
+/*navbar*/
+.navbar{
+  background-color: rgb(250, 165, 40);
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active:hover{
+  font-weight: 700 !important;
+  color:#4d3e0e !important;
+}
+.nav-link,
+.nav-link.active{
+  color: #ffffff !important;
+}
+  @media (max-width: 991.98px) {
+    #navbarNav {
+      text-align: center;
+    }
+    #navbarNav .navbar-nav {
+      flex-direction: column !important; 
+      align-items: center !important;    
+    }
+    #navbarNav .nav-item {
+      margin: 0.3rem 0; 
+    }
+    #navbarNav .nav-link {
+      text-align: center; 
+    }
+  }
+.navbar-brand{
+  color:rgb(255, 255, 255);
+  font-family: 'Cinzel', serif; 
+}
+.navbar-brand:hover{
+  color: #fff;
+}
+.brand-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  opacity: 0.5;
+  color: #f9f9f9;
+}
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-toggler{
+  border: none;
+  background: transparent;
+}
+
+/*hero section*/
+.hero-section{
+  height: 100vh;
+}
+.hero-overlay{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text p{
+  font-family: 'poppins',sans-serif;
+}
+
+ .btn{
+  font-family: initial !important;
+}
+.btn-animated {
+transition: all 0.3s ease;
+}
+.btn-animated:hover {
+transform: scale(1.05);
+
+}
+.btn-animated::after{
+content: "";
+position: absolute;
+top: 50%;
+left: -50%;
+width: 200%;
+height: 200%;
+background: rgba(255, 255, 255, 0.479);
+transform: rotate(25deg) translate(-100%, -50%);
+transition: all 0.5s ease;
+pointer-events: none;
+border-radius: 50%;
+opacity: 0;
+}
+.btn-animated:hover::after {
+transform: rotate(25deg) translate(100%, -50%);
+opacity: 1;
+}
+
+@media (max-width:768px){
+  .hero-text h1 {
+    font-size: 1.5rem; 
+  }
+  .hero-text p {
+    font-size: 0.80rem;
+  }
+.hero-buttons{
+  flex-direction: column; 
+  align-items: center;    
+  gap: 16px;
+  overflow: hidden;
+}
+.hero-buttons .btn{
+  width: 80vw;           
+  max-width: 360px; 
+  font-size: 1.2rem; 
+  padding: 0.6rem 1.2rem;     
+}
+.brand-subtitle {
+  font-size: 0.7rem;
+}
+}
+
+  /*services*/
+  .text-center{
+    font-family:'Cinzel', serif;
+    font-size:1.8rem;
+  }
+    .card:hover {
+      transform: translateY(-6px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  
+    .btn-primary {
+      transition: background-color 0.3s ease;
+    }
+  
+    .btn-primary:hover, .btn-primary:focus {
+      background-color: #689cfd !important;
+      border-color: #458dfa !important;
+    }
+    @media (min-width: 992px) {
+  #restaurants > .container {
+    min-height: 500px; 
+  }
+  .card{
+    min-height:350px;
+  }
+}
+@media (max-width: 991.98px) {
+  .card-body {
+    min-height: 400px; 
+
+  }
+  .text-muted{
+    font-size: 1.2rem;
+   } 
+}
+
+/*menu*/
+.text-muted{
+  font-size: 1.2rem;
+}
+
+.custom-card {
+  box-shadow: 0 1px 3px rgba(0, 123, 255, 0.377) !important;
+} 
+
+@media (min-width: 992px) {
+  .custom-card {
+    max-height: 300px;
+    overflow: hidden;
+  }
+  p{
+    font-size: 1rem;
+  }
+
+}
+
+/*form*/
+.custom-form label {
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  h2.h4 {
+    text-align: center !important;
+  }
+}
+
+  /*about*/
+ #titl {
+     font-family: 'Orbitron', sans-serif;
+     }
+  .carousel-img { 
+    object-fit: cover;
+   }
+  .opening-hours {
+    background: rgb(242, 245, 245);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+ 
+  @media (max-width: 768px) {
+    .carousel-img {
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+
+
+
+  /*footer*/
+  footer p{
+    font-family: initial !important;
+  }
+  .icon-link i {
+    font-size: 23px;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+  }
+  .icon-link:hover i {
+    transform: scale(1.2);
+    text-shadow: 0 0 8px rgba(250, 165, 69, 0.6); 
+  }
